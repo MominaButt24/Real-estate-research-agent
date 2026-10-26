@@ -1,0 +1,30 @@
+[project]
+name = "real-estate-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mominabutt24", email = "bmomina752@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=6.30.0",
+    "httpx>=0.28.1",
+    "langchain-anthropic>=1.7.6",
+    "langchain-core>=1.7.0",
+    "loguru>=0.7.3",
+    "neo4j>=6.4.1",
+    "pandas>=3.1.0",
+    "pydantic>=2.14.1",
+    "pydantic-settings>=2.16.1",
+    "pymilvus>=3.0.2",
+    "python-dotenv>=1.2.4",
+    "tenacity>=9.2.1",
+]
+
+[project.scripts]
+real-estate-project = "real_estate_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"

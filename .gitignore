@@ -1,0 +1,35 @@
+.env
+.env.*
+!.env.example
+
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+.ipynb_checkpoints/
+.DS_Store
+
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/evaluation/*
+!data/evaluation/.gitkeep
+
+
+# Secrets and local environments
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Ignore dataset files, but preserve data directories and placeholders
+data/**
+!data/**/
+!data/.gitkeep
+!data/**/.gitkeep
